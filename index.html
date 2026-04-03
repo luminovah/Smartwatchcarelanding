@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartWatchCare</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <style>
+        :root {
+            --bg-dark: #0f141e;
+            --bg-card: #1a2232;
+            --text-main: #ffffff;
+            --text-muted: #94a3b8;
+            --accent-teal: #14b8a6;
+            --accent-red: #ef4444;
+        }
+
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        /* Navbar */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 5%;
+            background-color: rgba(15, 20, 30, 0.95);
+            position: sticky;
+            top: 0;
+            border-bottom: 1px solid #2d3748;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .logo span {
+            color: var(--accent-teal);
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 6rem 5% 4rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-bottom: 2.5rem;
+        }
+
+        .btn-rsvp {
+            display: inline-block;
+            background-color: var(--accent-teal);
+            color: var(--bg-dark);
+            padding: 1rem 2.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn-rsvp:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(20, 184, 166, 0.3);
+        }
+
+        /* Features Section */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            padding: 4rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            background-color: var(--bg-card);
+            padding: 2rem;
+            border-radius: 16px;
+            border: 1px solid #2d3748;
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-card h3 {
+            margin-top: 0;
+            font-size: 1.3rem;
+        }
+
+        .feature-card p {
+            color: var(--text-muted);
+            margin-bottom: 0;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 3rem 5%;
+            border-top: 1px solid #2d3748;
+            margin-top: 3rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+            .hero p { font-size: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">SmartWatch<span>Care</span></div>
+        <a href="https://forms.gle/p5oFFhggTLgnjcpYA" target="_blank" class="btn-rsvp" style="padding: 0.6rem 1.5rem; font-size: 0.9rem;">RSVP</a>
+    </header>
+
+    <section class="hero">
+        <h1>Real-Time Health Sharing for the Whole Family</h1>
+        <p>Keep your loved ones safe. Live-share vital health data, location, and daily activity directly from Health Connect and your smartwatch to a secure family circle.</p>
+        <a href="https://forms.gle/p5oFFhggTLgnjcpYA" target="_blank" class="btn-rsvp">RSVP for Early Access</a>
+    </section>
+
+    <section class="features">
+        <div class="feature-card">
+            <div class="feature-icon">❤️</div>
+            <h3>Live Vitals Monitoring</h3>
+            <p>Monitor real-time heart rate, SpO2, body temperature, and blood pressure. Know exactly how your elderly parents or kids are doing, instantly.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🚨</div>
+            <h3>Instant Health Alerts</h3>
+            <p>Get immediate notifications for abnormal readings like high heart rate, low oxygen, or unusual body temperature changes so you can act fast.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">📍</div>
+            <h3>Activity & Location Sync</h3>
+            <p>Track steps, sleep quality, and live location. Perfect for ensuring kids make it to school safely or monitoring an elderly family member's daily routine.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🔒</div>
+            <h3>Secure Family Pairing</h3>
+            <p>Easily connect devices using a permanent, secure pair code. Seamlessly integrated with Health Connect to pull data directly from their favorite wearables.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 SmartWatchCare.com | Empowering families with real-time health data.</p>
+    </footer>
+
+</body>
+</html>
